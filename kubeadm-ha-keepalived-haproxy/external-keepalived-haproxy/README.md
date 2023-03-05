@@ -203,6 +203,20 @@ kubectl --kubeconfig=/etc/kubernetes/admin.conf create -f https://docs.projectca
 > Use the kubeadm join command you copied from the output of kubeadm init command on the first master
 
 
+## on master nodes copying admin.conf into .kube folder and updating the permissions of it
+```
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+## exporting kubeconfig enviornment variable
+```
+export KUBECONFIG=~/.kube/config
+
+```
+  
+
 ## Downloading kube config to your local machine
 On your host machine
 ```
