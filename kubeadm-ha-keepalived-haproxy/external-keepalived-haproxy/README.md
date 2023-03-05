@@ -212,7 +212,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ## exporting kubeconfig enviornment variable
 ```
-export KUBECONFIG=~/.kube/config
+ export KUBECONFIG=~/.kube/config
 
 ```
   
