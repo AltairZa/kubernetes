@@ -192,6 +192,12 @@ Copy the commands to join other master nodes and worker nodes.
 ##### Deploy Calico network
 ```
 kubectl --kubeconfig=/etc/kubernetes/admin.conf create -f https://docs.projectcalico.org/v3.18/manifests/calico.yaml
+
+july 2023: kubectl --kubeconfig=/etc/kubernetes/admin.conf create -f  https://docs.projectcalico.org/v3.25/manifests/calico.yaml
+Client Version: v1.26.3
+Kustomize Version: v4.5.7
+Server Version: v1.26.3
+
 ```
 
 ## Join other master nodes to the cluster
